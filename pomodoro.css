@@ -1,0 +1,87 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #818181;
+    font-weight: bold;
+    color: #4d4f4f;
+    white-space: nowrap;
+}
+#decrement-break,
+#increment-break,
+#increment-session,
+#decrement-session {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+    width: 51px;
+}
+.parent {
+    position: relative;
+    height: 400px;
+    background-color: #ed3e2f;
+    color: #fff;
+    /* margin-top: 10px; */
+    
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.h1pomo{
+  text-align: center;
+}
+#start {
+    background-color: #5cb85c;
+    border-radius: 100%;
+    line-height: 40px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+}
+.fa-play,
+.fa-pause {
+    line-height: inherit;
+}
+.pomo-progress-container {
+    height: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    bottom: -7px;
+    position: absolute;
+}
+.pomo-progress{
+    width: 0%;
+    height: 5px;
+    background-color: #5cb85c;
+}
+#break {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+#work {
+    padding-top: 5px;
+    padding-left: 35px;
+}
+#clock {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: #f45042;
+    border-radius: 100%;
+    border: 1px solid transparent
+}
+.pomo-container {
+    width: 376px;
+    margin: auto;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+#sessionName,
+#source {
+    text-transform: uppercase;
+    font-size: -webkit-xxx-large;
+    font-size: xxx-large;
+}
