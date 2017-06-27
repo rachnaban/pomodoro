@@ -74,8 +74,10 @@ $(document).ready(function() {
                     self.workMinutes -= 1;
                     self.display(self.workMinutes);
                     if (self.workMinutes == 0) {
-                        let audio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');
-                        audio.play();
+                        //let audio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');
+                        //audio.play();
+                        let mySound = new buzz.sound("./sounds/simonSound1.mp3");
+                         buzz.all().play();
                         self.pause();
                         self.startBreak();
                     }
@@ -95,8 +97,10 @@ $(document).ready(function() {
                     if (self.breakMinutes == 0) {
                         self.pause();
                         self.reset = true;
-                        let audio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');
-                        audio.play();
+                        //let audio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');
+                        //audio.play();
+			let mySound = new buzz.sound("./sounds/simonSound1.mp3");
+                         buzz.all().play();
                         self.startWork();
                     }
                 }, 1000);
