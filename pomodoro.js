@@ -1,5 +1,8 @@
 $(document).ready(function() {
-   let audio = $("#audio")[0];
+$('.btn-hide').click(function(){
+    let audio = $("#audio")[0];
+    audio.play();
+  });
     function doOperation(Id, type,flag=false) {
         var obj = $("#" + Id);
         var currentVal = obj.html();
@@ -81,7 +84,8 @@ $(document).ready(function() {
                          //buzz.all().play();
 			     //let $audio = document.querySelectorAll("audio");
                          //$audio[0].play();
-			    audio.play();
+			    //audio.play();
+			      $('.btn-hide').trigger('click');
                         self.pause();
                         self.startBreak();
                     }
@@ -107,7 +111,8 @@ $(document).ready(function() {
                          //buzz.all().play();
 			   // let $audio = document.querySelectorAll("audio");
                          //$audio[0].play();
-			    audio.play();
+			    //audio.play();
+			      $('.btn-hide').trigger('click');
                         self.startWork();
                     }
                 }, 1000);
