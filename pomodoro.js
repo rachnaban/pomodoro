@@ -1,4 +1,5 @@
 $(document).ready(function() {
+   let audio = $("#audio")[0];
     function doOperation(Id, type,flag=false) {
         var obj = $("#" + Id);
         var currentVal = obj.html();
@@ -78,8 +79,9 @@ $(document).ready(function() {
                         //audio.play();
                        // let mySound = new buzz.sound("./sounds/simonSound1.mp3");
                          //buzz.all().play();
-			     let $audio = document.querySelectorAll("audio");
-                         $audio[0].play();
+			     //let $audio = document.querySelectorAll("audio");
+                         //$audio[0].play();
+			    audio.play();
                         self.pause();
                         self.startBreak();
                     }
@@ -103,8 +105,9 @@ $(document).ready(function() {
                         //audio.play();
 			//let mySound = new buzz.sound("./sounds/simonSound1.mp3");
                          //buzz.all().play();
-			    let $audio = document.querySelectorAll("audio");
-                         $audio[0].play();
+			   // let $audio = document.querySelectorAll("audio");
+                         //$audio[0].play();
+			    audio.play();
                         self.startWork();
                     }
                 }, 1000);
