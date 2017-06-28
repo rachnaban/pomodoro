@@ -85,3 +85,6 @@ body {
     font-size: -webkit-xxx-large;
     font-size: xxx-large;
 }
+.btn-hide{
+    display:none;
+}
