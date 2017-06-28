@@ -76,8 +76,10 @@ $(document).ready(function() {
                     if (self.workMinutes == 0) {
                         //let audio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');
                         //audio.play();
-                        let mySound = new buzz.sound("./sounds/simonSound1.mp3");
-                         buzz.all().play();
+                       // let mySound = new buzz.sound("./sounds/simonSound1.mp3");
+                         //buzz.all().play();
+			     let $audio = document.querySelectorAll("audio");
+                         $audio[0].play();
                         self.pause();
                         self.startBreak();
                     }
@@ -99,8 +101,10 @@ $(document).ready(function() {
                         self.reset = true;
                         //let audio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');
                         //audio.play();
-			let mySound = new buzz.sound("./sounds/simonSound1.mp3");
-                         buzz.all().play();
+			//let mySound = new buzz.sound("./sounds/simonSound1.mp3");
+                         //buzz.all().play();
+			    let $audio = document.querySelectorAll("audio");
+                         $audio[0].play();
                         self.startWork();
                     }
                 }, 1000);
